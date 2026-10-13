@@ -4,21 +4,23 @@
   document.documentElement.classList.add("js");
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* Header: solid once scrolled, hides while scrolling down, returns when scrolling up */
+  /* Header: solid once scrolled. Hides after a deliberate scroll down and returns on a clear
+     scroll up — small trackpad wobbles in either direction are ignored. Updates once per frame. */
   var header = document.querySelector(".site-header");
   if (header) {
-    var lastY = window.scrollY;
-    var onScroll = function () {
-      var y = window.scrollY;
-      header.classList.toggle("is-solid", y > 40);
-      if (!document.body.classList.contains("nav-open")) {
-        header.classList.toggle("is-hidden", y > 480 && y > lastY + 4);
-        if (y < lastY - 4) header.classList.remove("is-hidden");
-      }
+    var lastY = window.scrollY, travel = 0, ticking = false;
+    var update = function () {
+      ticking = false;
+      var y = window.scrollY, dy = y - lastY;
       lastY = y;
+      header.classList.toggle("is-solid", y > 40);
+      if (document.body.classList.contains("nav-open") || y < 400) { travel = 0; header.classList.remove("is-hidden"); return; }
+      travel = (dy > 0) === (travel > 0) ? travel + dy : dy;   // reset when the direction flips
+      if (travel > 80) header.classList.add("is-hidden");
+      else if (travel < -50) header.classList.remove("is-hidden");
     };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+    update();
+    window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
   }
 
   /* Mobile menu */
@@ -42,9 +44,13 @@
   reveals.forEach(function (el) {
     var sibs = el.parentElement ? Array.prototype.filter.call(el.parentElement.children, function (c) { return c.classList.contains("reveal"); }) : [];
     var i = sibs.indexOf(el);
-    if (i > 0) el.style.setProperty("--d", Math.min(i, 5) * 0.07 + "s");
+    if (i > 0) el.style.setProperty("--d", Math.min(i, 3) * 0.06 + "s");
   });
   var show = function (el) { el.classList.add("is-visible"); };
+  reveals = reveals.filter(function (el) {
+    if (el.getBoundingClientRect().top < window.innerHeight * 0.9) { el.style.transition = "none"; show(el); requestAnimationFrame(function () { el.style.transition = ""; }); return false; }
+    return true;
+  });
   if ("IntersectionObserver" in window && !reduceMotion) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -69,8 +75,12 @@
   /* Hero video: only load/play on wider screens (mobile shows the still image) */
   document.querySelectorAll("video[data-desktop-only]").forEach(function (v) {
     var mq = window.matchMedia("(min-width: 810px)");
+    var inView = true;
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }).observe(v);
+    }
     var sync = function () {
-      if (mq.matches && !reduceMotion) {
+      if (mq.matches && !reduceMotion && inView) {
         if (!v.src && v.dataset.src) v.src = v.dataset.src;
         var p = v.play(); if (p && p.catch) p.catch(function () {});
       } else { v.pause(); }

@@ -23,6 +23,13 @@ Plain HTML/CSS/JS. No framework, no dependencies, no build step needed to deploy
 2. Run `node tools/sync-partials.mjs` — it copies the partial into every page between the
    `<!-- partial:… -->` markers, fixes relative paths and marks the current menu item.
 
+## Adding photos
+1. Put the original photo in `assets/img/` and reference it normally, e.g. `<img src="../../assets/img/my-photo.jpg" alt="…">`
+   (gallery: `<a href="…/my-photo.jpg"><img src="…/my-photo.jpg" alt="…"></a>` inside a `data-lightbox` grid).
+2. Run `python3 tools/optimize-images.py` (needs Pillow). It makes 640/1280/1920px WebP copies in
+   `assets/img/opt/` and rewrites the tags to use them with `srcset`. Never serve the originals directly:
+   they are up to 8000px wide and decoding them made scrolling stutter.
+
 ## Components (in style.css)
 | Need | Use |
 |---|---|

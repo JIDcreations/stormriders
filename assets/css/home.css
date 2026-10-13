@@ -18,7 +18,8 @@
     linear-gradient(to right, rgba(12, 13, 15, .55), transparent 65%);
 }
 .hero__inner { display: grid; gap: 40px; align-items: end; }
-@media (min-width: 1100px) { .hero__inner { grid-template-columns: 1fr 360px; } }
+@media (min-width: 1100px) { .hero__inner { grid-template-columns: 1fr 320px; } }
+@media (max-width: 1099px) { .hero__panel { max-width: 360px; } }
 .hero__copy { display: grid; gap: 20px; justify-items: start; }
 .hero__title { margin-top: 4px; }
 .hero__title span { display: block; color: transparent; -webkit-text-stroke: 2px #fff; }
@@ -31,28 +32,14 @@
   background: var(--red); clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/* Status + live wind panel */
-.hero__panel { display: grid; gap: 12px; }
-@media (min-width: 600px) and (max-width: 1099px) { .hero__panel { grid-template-columns: 1fr 1fr; } }
-.status-card, .wind {
-  display: grid; gap: 4px; padding: 18px 20px;
+/* Live wind panel. No backdrop blur: blurring a playing video costs a repaint every frame */
+.hero__panel { display: grid; }
+.wind {
+  display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 16px; padding: 18px 20px;
   border-radius: var(--r-md); border: 1px solid rgba(255, 255, 255, .16);
-  background: rgba(12, 13, 15, .45);
-  backdrop-filter: blur(14px) saturate(1.2); -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  background: rgba(12, 13, 15, .62);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08);
 }
-.status-card { transition: border-color .3s, transform .4s var(--ease); }
-.status-card:hover { border-color: var(--red); transform: translateY(-2px); }
-.status-card__label, .wind__label { font-size: .75rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: rgba(255, 255, 255, .65); }
-.status-card__value { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 400; font-size: 1.875rem; line-height: 1.05; letter-spacing: .01em; }
-.status-card__value[data-state="live"]::before {
-  content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--red); flex: none;
-  box-shadow: 0 0 0 0 rgba(225, 6, 0, .7); animation: pulse 1.8s infinite;
-}
-.status-card__note { font-size: var(--fs-small); color: rgba(255, 255, 255, .72); }
-@keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(225, 6, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(225, 6, 0, 0); } }
-
-.wind { grid-template-columns: auto 1fr; align-items: center; gap: 16px; }
 .wind__dial {
   position: relative; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%;
   border: 1.5px solid rgba(255, 255, 255, .25);
