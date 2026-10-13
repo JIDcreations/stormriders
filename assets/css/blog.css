@@ -1,0 +1,27 @@
+/* Surf talk overview: surftalk/blog-overview */
+
+/* Sub page hero (558px, darker overlay, translucent red wedge bottom-right) */
+.sub-hero { min-height: 558px; padding: 112px 0 40px; }
+.sub-hero::after { background: rgba(0, 0, 0, .6); }
+.sub-hero .rule.sub-hero__rule { margin-top: -2px; }
+.sub-hero .lead { margin-top: 15px; max-width: 442px; font-size: 18px; }
+.sub-hero__wedge {
+  position: absolute; right: 0; bottom: 0; z-index: 1;
+  width: var(--hw-w, 630px); height: var(--hw-h, 98px);
+  background: rgba(224, 7, 0, .5);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  pointer-events: none;
+}
+@media (max-width: 809px) {
+  .sub-hero { padding-top: 202px; }
+  .sub-hero .rule.sub-hero__rule { margin-top: 0; }
+  .sub-hero .lead { max-width: 100%; }
+  .sub-hero__wedge { display: none; }
+}
+
+.sub-hero--blog { --hw-w: 692px; --hw-h: 97px; }
+
+.blog-list { padding: 64px 0 128px; }
+.blog-list .card { min-height: 300px; padding-top: 36px; }
+.blog-list .card__tag { text-transform: none; }
+@media (max-width: 809px) { .blog-list { padding-bottom: 80px; } }

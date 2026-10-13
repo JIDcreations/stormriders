@@ -1,0 +1,98 @@
+/* Rulez */
+
+/* ---------- Hero ---------- */
+.sub-hero { height: 558px; min-height: 0; padding: 112px 0 0; }
+.sub-hero::after { background: rgba(0, 0, 0, .6); z-index: 1; }
+.sub-hero__wedge {
+  position: absolute; left: 5px; top: 460px;
+  width: 100%; height: 306px;
+  fill: rgba(224, 7, 0, .5); pointer-events: none;
+}
+.sub-hero__rule { margin-top: 0; }
+.page-hero .sub-hero__lead { margin-top: 12px; max-width: 442px; font-size: 18px; line-height: 29px; }
+@media (max-width: 809px) {
+  .sub-hero { padding-top: 146px; }
+  .sub-hero__wedge { display: none; }
+  /* live mobile keeps the full-size title */
+  .rz-hero__title { font-size: 156px; line-height: 133px; letter-spacing: -2.5px; }
+  .page-hero .sub-hero__lead { max-width: 347px; margin-top: 15px; }
+}
+
+/* ---------- Sections & type ---------- */
+.rz-section { position: relative; padding: 64px 0; }
+.rz-h1 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: 126px; line-height: 151.2px; letter-spacing: -3px; text-transform: uppercase;
+}
+.rz-h2 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: 60px; line-height: 60px; text-transform: uppercase;
+}
+.rz-rule { margin-top: -3px; }
+.rz-sub { font-size: 24px; line-height: 24px; font-weight: 700; letter-spacing: 2.4px; }
+@media (max-width: 809px) {
+  .rz-h1 { font-size: 86px; line-height: 88px; letter-spacing: -2.7px; }
+  .rz-h1 br { display: none; }
+  /* "CHAMPIONSHIP" doesn't fit 350px at 86px (live mobile swapped in other copy) */
+  .rz-champ { font-size: 60px; line-height: 62px; letter-spacing: -1.5px; }
+}
+
+/* ---------- Championship block ---------- */
+.rz-date { margin-top: 44px; }
+.rz-label {
+  margin-top: 20px;
+  font-size: 18px; line-height: 20px; font-weight: 700; letter-spacing: 3.6px;
+}
+.rz-date + .rz-label { margin-top: 24px; }
+.rz-label span, .rz-cats { color: var(--red); }
+.rz-cats-title { margin-top: 30px; }
+.rz-cats { margin-top: 25px; display: grid; gap: 10px; font-size: 18px; line-height: 20px; font-weight: 700; letter-spacing: 3.6px; }
+.rz-info-title { margin-top: 64px; }
+.rz-info { margin-top: 22px; display: grid; gap: 20px; font-weight: 400; }
+@media (max-width: 809px) {
+  .rz-cats { gap: 24px; }
+}
+
+/* ---------- Long prose (wave riding guidelines) ---------- */
+.rz-prose { margin-top: 22px; }
+.rz-prose p + p { margin-top: 29px; }
+.rz-prose div + div { margin-top: 49px; }
+@media (min-width: 1200px) { .rz-prose { margin-right: -22px; } }
+
+/* ---------- Media rows ---------- */
+.rz-media { display: grid; align-items: start; }
+.rz-img { width: 100%; height: auto; object-fit: cover; }
+.rz-media--manoeuvres { margin-top: 78px; grid-template-columns: 270px 1fr; gap: 100px; }
+.rz-media--manoeuvres .rz-img { aspect-ratio: 878 / 490; }
+.rz-media--general { margin-top: 24px; grid-template-columns: 901fr 248fr; gap: 99px; }
+.rz-media--general .rz-img { aspect-ratio: 901 / 447; }
+.rz-media--jumping { margin-top: 24px; grid-template-columns: 344px 1fr; gap: 24px; }
+.rz-media--jumping .rz-img { aspect-ratio: 880 / 451; }
+
+/* Framer rendered this column in its default Inter 16px; mimic it with a neutral sans */
+.rz-small { font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 16px; line-height: 19.2px; font-weight: 400; }
+.rz-small p + p { margin-top: 17px; }
+
+.rz-note { margin-top: 22px; }
+.rz-list { margin: 0; padding-left: 18px; }
+.rz-list--spaced { display: grid; gap: 16px; max-width: 266px; }
+.rz-list--jumps { padding-left: 26px; max-width: 268px; }
+.rz-list li { padding-left: 0; }
+
+.rz-jump-title { margin-top: 22px; }
+.rz-jump-text { margin-top: 20px; max-width: 1246px; }
+
+.rz-notes { margin-top: 22px; display: grid; gap: 16px; max-width: 1224px; }
+
+@media (max-width: 1199px) {
+  .rz-media--manoeuvres { gap: 48px; }
+  .rz-media--general { grid-template-columns: 3fr 2fr; gap: 48px; }
+  .rz-media--jumping { grid-template-columns: 300px 1fr; }
+}
+@media (max-width: 809px) {
+  /* live mobile shows the text columns only */
+  .rz-media { grid-template-columns: 1fr !important; gap: 0; }
+  .rz-media .rz-img { display: none; }
+  .rz-small { max-width: 270px; }
+}
+

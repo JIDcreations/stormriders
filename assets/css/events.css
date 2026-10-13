@@ -1,0 +1,20 @@
+/* Events overview (events/events) */
+
+/* Hero */
+.ev-hero { min-height: 558px; height: 558px; padding-top: 112px; }
+.ev-hero::after { background: rgba(0, 0, 0, .2); } /* live has no overlay; light tint keeps the copy readable */
+.ev-hero .rule { margin-top: -5px; }
+.ev-hero__lead.lead { margin-top: 13px; max-width: 442px; font-size: 18px; line-height: 29px; }
+@media (max-width: 809px) {
+  .ev-hero > .container { padding-left: 40px; }
+  .ev-hero .rule { margin-top: -4px; }
+  .ev-hero__lead.lead { margin-top: 11px; }
+}
+
+/* List */
+.ev-list { padding: 64px 0; }
+.ev-list .rule { margin-top: -5px; }
+.ev-list__grid { margin-top: 49px; }
+.ev-list .card { min-height: 500px; }
+.ev-list__wide { grid-column: 1 / -1; }
+.ev-list .card__tag { padding: 10px 20px; text-transform: none; }
