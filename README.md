@@ -7,8 +7,8 @@ Plain HTML/CSS/JS. No framework, no dependencies, no build step needed to deploy
     open http://localhost:8765/
 
 ## Versions
-- `v1-framer-copy` (git tag) — the 1:1 copy of the old Framer site. Go back with `git checkout v1-framer-copy`.
-- `redesign` branch — the cleaned-up redesign.
+- `main` — the current site (the redesign).
+- `framer-design` branch (also tag `v1-framer-copy`) — the 1:1 copy of the old Framer site.
 
 ## Structure
 - Every URL is a folder with an `index.html` (e.g. `/events/bkwave-26/`), so old links keep working.
