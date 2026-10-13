@@ -5,171 +5,221 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Geschiedenis — Stormriders</title>
   <meta name="description" content="Al langer dan 30 jaar actief in België.">
+  <meta name="theme-color" content="#0c0d0f">
   <link rel="icon" href="../assets/img/Ah1kjgsRExJHuZhnqSC8oUG8w.png" media="(prefers-color-scheme: light)">
   <link rel="icon" href="../assets/img/zPwPHLjqUl2gWu2JsLtcEaPYk.png" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Geschiedenis — Stormriders">
   <meta property="og:description" content="Al langer dan 30 jaar actief in België.">
-  <meta property="og:image" content="https://stormriders.be/assets/img/GZGp7B6THmhRGmayIz0pSpdHiA.jpg">
+  <meta property="og:image" content="https://stormriders.be/assets/img/HlLycdZ9nqiA36Mh2mxR8VOh4.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,400;0,500;0,700;1,400&display=swap">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/geschiedenis.css">
   <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
 
+<!-- partial:header -->
+<a class="skip-link" href="#main">Naar de inhoud</a>
 <header class="site-header">
   <div class="container site-header__inner">
-    <a class="site-header__logo" href="../index.html">STORMRIDERS</a>
+    <a class="logo" href="../index.html" aria-label="Stormriders — home">Stormriders</a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu openen"><span></span><span></span></button>
     <nav class="site-nav" id="site-nav" aria-label="Hoofdmenu">
       <ul>
-        <li class="only-mobile"><a href="../index.html">Home</a></li>
-        <li><a href="../events/events/index.html">Events</a></li>
-        <li><a href="../media/media-foto/index.html">Media</a></li>
-        <li><a href="../over-ons/index.html">Over ons</a></li>
-        <li><a href="../surftalk/blog-overview/index.html">Surf talk</a></li>
-        <li><a href="../geschiedenis/index.html" aria-current="page">Geschiedenis</a></li>
+        <li class="only-menu"><a href="../index.html" data-nav="home">Home</a></li>
+        <li><a href="../events/events/index.html" data-nav="events">Events</a></li>
+        <li><a href="../surftalk/blog-overview/index.html" data-nav="surftalk">Surftalk</a></li>
+        <li><a href="../media/media-foto/index.html" data-nav="media">Media</a></li>
+        <li><a href="../geschiedenis/index.html" data-nav="geschiedenis" aria-current="page">Geschiedenis</a></li>
+        <li><a href="../rulez/index.html" data-nav="rulez">Rulez</a></li>
+        <li><a href="../over-ons/index.html" data-nav="over-ons">Over ons</a></li>
+        <li class="nav-cta"><a class="btn btn--sm" href="../events/bkwave-26/index.html">BK Wave 26</a></li>
       </ul>
+      <div class="menu-extra">
+        <a href="mailto:xavierroyaux@hotmail.com">xavierroyaux@hotmail.com</a>
+        <div class="socials">
+          <a href="https://www.instagram.com/stormriders.be/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/surfstormriders/" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
+<!-- /partial:header -->
 
-<main>
+<main id="main">
 
   <!-- Hero -->
-  <section class="ghero">
-    <img class="ghero__bg" src="../assets/img/HlLycdZ9nqiA36Mh2mxR8VOh4.jpg" alt="" width="1920" height="1277">
-    <div class="container ghero__content">
-      <h1 class="display display--hero ghero__title">Geschiedenis</h1>
-      <span class="rule ghero__rule" style="--rule-w:226px"></span>
-      <p class="lead ghero__lead">BK Wave is al een traditie vanuit de jaren 1990 ongeveer.Anthony Vroman, Xavier Huyssen, Tom Scheirlinck, Stijn De Pauw, Tommy Maenhout, en nu de Midsummer wavenights crew met Xavier Royaux zorgen ervoor dat dit evenement al jarenlang kan doorgaan in het Kanaal.</p>
+  <section class="page-hero">
+    <img class="page-hero__bg" src="../assets/img/HlLycdZ9nqiA36Mh2mxR8VOh4.jpg" alt="" fetchpriority="high">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Sinds de jaren '90</p>
+      <h1 class="h1">Geschiedenis</h1>
+      <p class="lead">BK Wave is al een traditie vanuit de jaren 1990 ongeveer.Anthony Vroman, Xavier Huyssen, Tom Scheirlinck, Stijn De Pauw, Tommy Maenhout, en nu de Midsummer wavenights crew met Xavier Royaux zorgen ervoor dat dit evenement al jarenlang kan doorgaan in het Kanaal.</p>
     </div>
   </section>
 
   <!-- Cijfers -->
-  <section class="gstats" aria-label="Stormriders in cijfers">
+  <section class="hstats" aria-label="Stormriders in cijfers">
     <div class="container">
-      <ul class="gstats__list">
-        <li><strong>35+</strong><span>Jaar actief</span></li>
-        <li><strong>50+</strong><span>Deelnemers</span></li>
-        <li><strong>4</strong><span>Locaties</span></li>
-        <li><strong>2</strong><span>Disciplines</span></li>
+      <ul class="hstats__list">
+        <li class="reveal"><strong>35+</strong><span>Jaar actief</span></li>
+        <li class="reveal"><strong>50+</strong><span>Deelnemers</span></li>
+        <li class="reveal"><strong>4</strong><span>Locaties</span></li>
+        <li class="reveal"><strong>2</strong><span>Disciplines</span></li>
       </ul>
     </div>
   </section>
 
   <!-- Onze rides -->
-  <section class="grides">
+  <section class="section rides">
     <div class="container">
-      <h2 class="display display--hero gsec__title">Onze rides</h2>
-      <span class="rule" style="--rule-w:326px"></span>
-      <div class="rides">
-      <article class="ride ride--img-left reveal">
-        <div class="ride__text">
-          <h3 class="ride__year">1990</h3>
-          <p class="ride__title">flanders fun pool</p>
-          <p>BK wave was een onderdeel van de BABC Flanders funpool wedstrijd.</p>
-          <p>Weerberichten waren enkel zichtbaar op tv of teletekst, dus wedstrijden waren vaak een gok. De feestjes echter waren altijd gegarandeerd. Onder andere dankzij de hulp van Anthony Vroman, Xavier Huyssen, Marnix Mixnix, enz. was er altijd verse soep voorzien tijdens radicale en koude omstandigheden in de herfst.</p>
+      <div class="sh">
+        <div class="sh__text">
+          <p class="eyebrow">Van funpool tot Open BK</p>
+          <h2 class="h2">Onze rides</h2>
         </div>
-        <figure class="ride__media"><img src="../assets/img/KG4QDeo81Hh2RHaa477CqB5VE.jpg" alt="Windsurfers tijdens de Flanders Fun Pool in de jaren 90" width="1920" height="1278" loading="lazy"></figure>
-      </article>
-      <article class="ride ride--img-right reveal">
-        <div class="ride__text">
-          <h3 class="ride__year">2003</h3>
-          <p class="ride__title">OPRICHTING STORMRIDERS</p>
-          <p>Stijn De Pauw en Tom Scheirlinck namen de fakkel over.</p>
-          <p>De website Stormriders was geboren.</p>
-          <p>Hardcore wedstrijden met shorebrake in Audresselles waren de highlights.</p>
-        </div>
-        <figure class="ride__media"><img src="../assets/img/zKciq3DFJbb4osYsNGWvUSAUaM.jpg" alt="Windsurfer in de shorebreak bij Audresselles" width="5202" height="3468" loading="lazy"></figure>
-      </article>
-      <article class="ride ride--img-left reveal">
-        <div class="ride__text">
-          <h3 class="ride__year">2005</h3>
-          <p class="ride__title">BK Crash</p>
-          <p>Gratis bier, adfundums, goede muziek, stapels prijzen en een jurytoren in de branding: dit evenement ademde één en al sfeer. Omdat de focus op fun lag in plaats van op techniek, was de opkomst enorm hoog. Gelandde moves telden zelfs niet. Fotografen zetten alles op beeld en de afterparty duurde altijd tot vroeg in de ochtend.</p>
-        </div>
-        <figure class="ride__media"><img src="../assets/img/d6itnw0VwwMjCpyt6kkyJJANB1U.jpg" alt="Deelnemers aan de BK Crash" width="853" height="569" loading="lazy"></figure>
-      </article>
-      <article class="ride ride--img-right reveal">
-        <div class="ride__text">
-          <h3 class="ride__year">2010</h3>
-          <p class="ride__title">Midsummer wavenights</p>
-          <p>Xavier Royaux  organiseert samen met Yuri Blomme voor het eerst een afterwork wave competie op de windsurfclub in de Haan.  Tijdens de langste dagen van het jaar. Eind juni wordt er jaarlijks een single elimination georganiseerd op afroep.  Daags voor het event wordt het licht op groen gezet en vanaf 18u starten de eerste heats.</p>
-        </div>
-        <figure class="ride__media"><img src="../assets/img/UQdan8myMPllshlFByV6HgDETo.jpg" alt="Midsummer wavenights in De Haan" width="1455" height="1000" loading="lazy"></figure>
-      </article>
-      <article class="ride ride--img-left reveal">
-        <div class="ride__text">
-          <h3 class="ride__year">2016</h3>
-          <p class="ride__title">Mswn Waveslalom</p>
-          <p>Na enkele jaren single elimination wordt een discipline discipline toegevoegd, wave slalom om ook de instappende windsurfers te laten kennis maken met wedstrijdsurfen en de drempel naar deelname aan de single elimination te verlagen.</p>
-        </div>
-        <figure class="ride__media"><img src="../assets/img/EOsDcZs3RZ4U7yWl4RfUD8bwkU.jpg" alt="Windsurfers tijdens de wave slalom" width="960" height="635" loading="lazy"></figure>
-      </article>
-      <article class="ride ride--img-right reveal">
-        <div class="ride__text">
-          <h3 class="ride__year">2019</h3>
-          <p class="ride__title">RAINMAN</p>
-          <p>Op 29 september stonden de hemelsluizen open in Wimereux.  3.7 was de meest gekozen maat en met een wilde en ongeordende branding werd een double elimination afgewerkt. Karel Martens klom in de double helemaal terug en verloor nipt tegen Nick voor de 2e plaats.  Jonas Handekeyn en Nick De Wannemaeker streden om de titel.  Met zeer veel stroming en zeer vlagere wind wist Nick tot 2x toe het laken naar zicht toe te trekken en won hij voor het eerst de Belgische titel.</p>
-        </div>
-        <figure class="ride__media"><img src="../assets/img/l5wDs5fiEdUt34Vro0I1yXZKXY.jpg" alt="Windsurfers in de regen en wilde branding van Wimereux" width="1920" height="1278" loading="lazy"></figure>
-      </article>
-      <article class="ride ride--img-left reveal">
-        <figure class="ride__media"><img src="../assets/img/lWwrz4lHTEpwBBEmDpZY1F6Kpwc.jpg" alt="Leeg strand tijdens de coronajaren" width="3861" height="2172" loading="lazy"></figure>
-        <div class="ride__text">
-          <h3 class="ride__year">2020-2021</h3>
-          <p class="ride__title">NO GO CoRONA</p>
-
-        </div>
-      </article>
-      <article class="ride ride--img-right reveal">
-        <figure class="ride__media"><img src="../assets/img/5aqI6KS12ThNLMDG9kTD4uZiDAg.jpg" alt="Jonge windsurfers op het eerste BK youth in Wimereux" width="4256" height="2832" loading="lazy"></figure>
-        <div class="ride__text">
-          <h3 class="ride__year">2022</h3>
-          <p class="ride__title">BK jeugd</p>
-          <p>In samenwerking met surfclub Windekind en BABC wordt beslist om ook voor de jeugd een bk windsurf te organiseren, los staand van het BK wave.  Het eerste BK youth gaat door in Wimereux, een dag waar de hemelsluizen openstonden,  de jeugd trok er zich niets van aan en de moves waren van zeer hoog niveau. Deelnemers jonger dan 21 varen in verschillende categorieën hun heats. Bij de jeugd varen ook de meisjes mee tussen de jongens. 4 nieuwe Belgische titels worden toegevoegd: U15, U 17, U 19 &amp; U 21</p>
-        </div>
-      </article>
-      <article class="ride ride--img-left reveal">
-        <figure class="ride__media"><img src="../assets/img/xGg3Pgzm6XJOPhZyfFSDoVKgY.jpg" alt="Windsurfer tijdens het BK Wave 2022" width="4278" height="2852" loading="lazy"></figure>
-        <div class="ride__text">
-          <h3 class="ride__year">2022</h3>
-          <p class="ride__title">3 wedstrijddagen</p>
-          <p>Op zaterdag werd de single afgewerkt en een deel van de double, de condities waren top om een groot aantal jongeren en nieuwkomers te laten proeven van hun eerste BK Wave. Op zondag vertrok de top 12 richting Wimereux om met opkomend tij en oponhoudelijke regen de strijden voor de titel.  Nick De Wannemaeker haalde de titlel binnen voor Jonas Handekeyn en Karel Martens.</p>
-        </div>
-      </article>
-      <article class="ride ride--img-right reveal">
-        <figure class="ride__media"><img src="../assets/img/QdVciZxper7nHU2rYqF75g32s7o.jpg" alt="Jeugdige windsurfers op La Pointe" width="2048" height="1365" loading="lazy"></figure>
-        <div class="ride__text">
-          <h3 class="ride__year">2023</h3>
-          <p class="ride__title">BK U21</p>
-          <p>Op La Pointe kan de jeugd U 21 een single elimination afwerken. Sol Degrieck verslaat als vrouw de mannen bij jeugd. Haar hoge stalled forwards zijn de doorslaggevende factor. Stijn Van den Brande en Viktor Fransen rippen in de golven, maar moeten het onderspit delven tegen Sol.  Met het opkomend tij proberen we nog een bk wave voor de volwassenen af te werken, maar de wind draait te aflandig en we moeten stoppen.  Toch wordt er afgesloten met een vat Bavik bij Surfburger.</p>
-        </div>
-      </article>
-      <article class="ride ride--img-left reveal">
-        <figure class="ride__media"><img src="../assets/img/xGg3Pgzm6XJOPhZyfFSDoVKgY.jpg" alt="Windsurfer op een regenachtige wedstrijddag in Wimereux" width="4278" height="2852" loading="lazy"></figure>
-        <div class="ride__text">
-          <h3 class="ride__year">2024</h3>
-          <p class="ride__title">Last chance to dance</p>
-          <p>Drie maanden waiting period en eindelijk verschijnt er iets op de weerkaarten voor zondag 20 oktober.  Op een regenachtige dag wordt in Wimereux afgesproken.  Sol Degrieck neem te fakkel over van Katriens Smits bij de vrouwen en Nick De Wannemaeker verslaat Olivier Pas, Stijn Van den Brande en Laurent Desaever.  Prijsuitreiking bij Surfburger in de Panne, die ook in de middagpauze bij hoogtij de deelnemers op krachten deed komen met hun heerlijke Surfburger, merci Lodewijk.</p>
-        </div>
-      </article>
-      <article class="ride ride--img-right reveal">
-        <figure class="ride__media"><img src="../assets/img/18QWDtLlsPeNpfaMAgFDGb0EEB0.jpg" alt="Windsurfer bij 40 knopen zuidwest tijdens het BK Wave 2025" width="3547" height="2361" loading="lazy"></figure>
-        <div class="ride__text">
-          <h3 class="ride__year">2025</h3>
-          <p class="ride__title">Amy</p>
-          <p>Voor het eerst is het een OPEN BK, met 1 Nederlandse inschrijving. Met een record aantal deelnemers en de top van de Belgische scene wordt een double elimation gevaren met gemiddeld 40 knopen Zuidwest.  De tilel bij de mannen gaat naar Thomas Beulens, bij de vrouwen terug naar Katrien Smits. Jeff Francois wint de U15, en Arthur Van den Brande bij de U21. Dank aan surfclub Windekind, en  Zeevonk voor de sponsoring. Verslag bij events op deze site.</p>
-        </div>
-      </article>
       </div>
+      <div class="chapters" data-lightbox>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">1990</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">1990: </span>flanders fun pool</h3>
+            <div class="prose chapter__text">
+            <p>BK wave was een onderdeel van de BABC Flanders funpool wedstrijd.</p>
+            <p>Weerberichten waren enkel zichtbaar op tv of teletekst, dus wedstrijden waren vaak een gok. De feestjes echter waren altijd gegarandeerd. Onder andere dankzij de hulp van Anthony Vroman, Xavier Huyssen, Marnix Mixnix, enz. was er altijd verse soep voorzien tijdens radicale en koude omstandigheden in de herfst.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/KG4QDeo81Hh2RHaa477CqB5VE.jpg"><img src="../assets/img/KG4QDeo81Hh2RHaa477CqB5VE.jpg" alt="Windsurfers tijdens de Flanders Fun Pool in de jaren 90" width="1920" height="1278" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2003</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2003: </span>OPRICHTING STORMRIDERS</h3>
+            <div class="prose chapter__text">
+            <p>Stijn De Pauw en Tom Scheirlinck namen de fakkel over.</p>
+            <p>De website Stormriders was geboren.</p>
+            <p>Hardcore wedstrijden met shorebrake in Audresselles waren de highlights.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/zKciq3DFJbb4osYsNGWvUSAUaM.jpg"><img src="../assets/img/zKciq3DFJbb4osYsNGWvUSAUaM.jpg" alt="Windsurfer in de shorebreak bij Audresselles" width="5202" height="3468" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2005</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2005: </span>BK Crash</h3>
+            <div class="prose chapter__text">
+            <p>Gratis bier, adfundums, goede muziek, stapels prijzen en een jurytoren in de branding: dit evenement ademde één en al sfeer. Omdat de focus op fun lag in plaats van op techniek, was de opkomst enorm hoog. Gelandde moves telden zelfs niet. Fotografen zetten alles op beeld en de afterparty duurde altijd tot vroeg in de ochtend.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/d6itnw0VwwMjCpyt6kkyJJANB1U.jpg"><img src="../assets/img/d6itnw0VwwMjCpyt6kkyJJANB1U.jpg" alt="Deelnemers aan de BK Crash" width="853" height="569" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2010</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2010: </span>Midsummer wavenights</h3>
+            <div class="prose chapter__text">
+            <p>Xavier Royaux  organiseert samen met Yuri Blomme voor het eerst een afterwork wave competie op de windsurfclub in de Haan.  Tijdens de langste dagen van het jaar. Eind juni wordt er jaarlijks een single elimination georganiseerd op afroep.  Daags voor het event wordt het licht op groen gezet en vanaf 18u starten de eerste heats.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/UQdan8myMPllshlFByV6HgDETo.jpg"><img src="../assets/img/UQdan8myMPllshlFByV6HgDETo.jpg" alt="Midsummer wavenights in De Haan" width="1455" height="1000" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2016</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2016: </span>Mswn Waveslalom</h3>
+            <div class="prose chapter__text">
+            <p>Na enkele jaren single elimination wordt een discipline discipline toegevoegd, wave slalom om ook de instappende windsurfers te laten kennis maken met wedstrijdsurfen en de drempel naar deelname aan de single elimination te verlagen.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/EOsDcZs3RZ4U7yWl4RfUD8bwkU.jpg"><img src="../assets/img/EOsDcZs3RZ4U7yWl4RfUD8bwkU.jpg" alt="Windsurfers tijdens de wave slalom" width="960" height="635" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2019</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2019: </span>RAINMAN</h3>
+            <div class="prose chapter__text">
+            <p>Op 29 september stonden de hemelsluizen open in Wimereux.  3.7 was de meest gekozen maat en met een wilde en ongeordende branding werd een double elimination afgewerkt. Karel Martens klom in de double helemaal terug en verloor nipt tegen Nick voor de 2e plaats.  Jonas Handekeyn en Nick De Wannemaeker streden om de titel.  Met zeer veel stroming en zeer vlagere wind wist Nick tot 2x toe het laken naar zicht toe te trekken en won hij voor het eerst de Belgische titel.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/l5wDs5fiEdUt34Vro0I1yXZKXY.jpg"><img src="../assets/img/l5wDs5fiEdUt34Vro0I1yXZKXY.jpg" alt="Windsurfers in de regen en wilde branding van Wimereux" width="1920" height="1278" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year chapter__year--range" aria-hidden="true">2020-<wbr>2021</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2020-2021: </span>NO GO CoRONA</h3>
+            <div class="prose chapter__text">
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/lWwrz4lHTEpwBBEmDpZY1F6Kpwc.jpg"><img src="../assets/img/lWwrz4lHTEpwBBEmDpZY1F6Kpwc.jpg" alt="Leeg strand tijdens de coronajaren" width="3861" height="2172" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2022</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2022: </span>BK jeugd</h3>
+            <div class="prose chapter__text">
+            <p>In samenwerking met surfclub Windekind en BABC wordt beslist om ook voor de jeugd een bk windsurf te organiseren, los staand van het BK wave.  Het eerste BK youth gaat door in Wimereux, een dag waar de hemelsluizen openstonden,  de jeugd trok er zich niets van aan en de moves waren van zeer hoog niveau. Deelnemers jonger dan 21 varen in verschillende categorieën hun heats. Bij de jeugd varen ook de meisjes mee tussen de jongens. 4 nieuwe Belgische titels worden toegevoegd: U15, U 17, U 19 &amp; U 21</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/5aqI6KS12ThNLMDG9kTD4uZiDAg.jpg"><img src="../assets/img/5aqI6KS12ThNLMDG9kTD4uZiDAg.jpg" alt="Jonge windsurfers op het eerste BK youth in Wimereux" width="4256" height="2832" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2022</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2022: </span>3 wedstrijddagen</h3>
+            <div class="prose chapter__text">
+            <p>Op zaterdag werd de single afgewerkt en een deel van de double, de condities waren top om een groot aantal jongeren en nieuwkomers te laten proeven van hun eerste BK Wave. Op zondag vertrok de top 12 richting Wimereux om met opkomend tij en oponhoudelijke regen de strijden voor de titel.  Nick De Wannemaeker haalde de titlel binnen voor Jonas Handekeyn en Karel Martens.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/xGg3Pgzm6XJOPhZyfFSDoVKgY.jpg"><img src="../assets/img/xGg3Pgzm6XJOPhZyfFSDoVKgY.jpg" alt="Windsurfer tijdens het BK Wave 2022" width="4278" height="2852" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2023</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2023: </span>BK U21</h3>
+            <div class="prose chapter__text">
+            <p>Op La Pointe kan de jeugd U 21 een single elimination afwerken. Sol Degrieck verslaat als vrouw de mannen bij jeugd. Haar hoge stalled forwards zijn de doorslaggevende factor. Stijn Van den Brande en Viktor Fransen rippen in de golven, maar moeten het onderspit delven tegen Sol.  Met het opkomend tij proberen we nog een bk wave voor de volwassenen af te werken, maar de wind draait te aflandig en we moeten stoppen.  Toch wordt er afgesloten met een vat Bavik bij Surfburger.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/QdVciZxper7nHU2rYqF75g32s7o.jpg"><img src="../assets/img/QdVciZxper7nHU2rYqF75g32s7o.jpg" alt="Jeugdige windsurfers op La Pointe" width="2048" height="1365" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2024</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2024: </span>Last chance to dance</h3>
+            <div class="prose chapter__text">
+            <p>Drie maanden waiting period en eindelijk verschijnt er iets op de weerkaarten voor zondag 20 oktober.  Op een regenachtige dag wordt in Wimereux afgesproken.  Sol Degrieck neem te fakkel over van Katriens Smits bij de vrouwen en Nick De Wannemaeker verslaat Olivier Pas, Stijn Van den Brande en Laurent Desaever.  Prijsuitreiking bij Surfburger in de Panne, die ook in de middagpauze bij hoogtij de deelnemers op krachten deed komen met hun heerlijke Surfburger, merci Lodewijk.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/xGg3Pgzm6XJOPhZyfFSDoVKgY.jpg"><img src="../assets/img/xGg3Pgzm6XJOPhZyfFSDoVKgY.jpg" alt="Windsurfer op een regenachtige wedstrijddag in Wimereux" width="4278" height="2852" loading="lazy"></a>
+        </article>
+        <article class="chapter reveal">
+          <p class="chapter__year" aria-hidden="true">2025</p>
+          <div class="chapter__body">
+            <h3 class="h3 chapter__title"><span class="visually-hidden">2025: </span>Amy</h3>
+            <div class="prose chapter__text">
+            <p>Voor het eerst is het een OPEN BK, met 1 Nederlandse inschrijving. Met een record aantal deelnemers en de top van de Belgische scene wordt een double elimation gevaren met gemiddeld 40 knopen Zuidwest.  De tilel bij de mannen gaat naar Thomas Beulens, bij de vrouwen terug naar Katrien Smits. Jeff Francois wint de U15, en Arthur Van den Brande bij de U21. Dank aan surfclub Windekind, en  Zeevonk voor de sponsoring. Verslag bij events op deze site.</p>
+            </div>
+          </div>
+          <a class="chapter__media" href="../assets/img/18QWDtLlsPeNpfaMAgFDGb0EEB0.jpg"><img src="../assets/img/18QWDtLlsPeNpfaMAgFDGb0EEB0.jpg" alt="Windsurfer bij 40 knopen zuidwest tijdens het BK Wave 2025" width="3547" height="2361" loading="lazy"></a>
+        </article>
+      </div>
+    </div>
+  </section>
 
-      <h2 class="display display--hero gsec__title ggallery__title">Old gallery</h2>
-      <span class="rule" style="--rule-w:326px"></span>
-      <div class="ggallery" data-lightbox>
+  <!-- Old gallery -->
+  <section class="section section--dark cut grain">
+    <div class="container">
+      <div class="sh">
+        <div class="sh__text">
+          <p class="eyebrow">Archief</p>
+          <h2 class="h2">Old gallery</h2>
+        </div>
+      </div>
+      <div class="photo-grid photo-grid--dense hgallery" data-lightbox>
         <a href="../assets/img/l5wDs5fiEdUt34Vro0I1yXZKXY.jpg"><img src="../assets/img/l5wDs5fiEdUt34Vro0I1yXZKXY.jpg" alt="Twee windsurfers springen boven wilde golven" width="1920" height="1278" loading="lazy"></a>
         <a href="../assets/img/iAxKNq15o7dpVqVjAIfJQjnRs3s.jpg"><img src="../assets/img/iAxKNq15o7dpVqVjAIfJQjnRs3s.jpg" alt="Windsurfer in de lucht boven brekende golven" width="1920" height="1277" loading="lazy"></a>
         <a href="../assets/img/ci7hZA8rDV9mWYacRXn2mSozbE.jpg"><img src="../assets/img/ci7hZA8rDV9mWYacRXn2mSozbE.jpg" alt="Windsurfer in de branding" width="1920" height="1278" loading="lazy"></a>
@@ -198,42 +248,65 @@
 
 </main>
 
-<footer class="site-footer">
+<!-- partial:footer -->
+<footer class="site-footer grain">
   <div class="container">
     <div class="site-footer__grid">
       <div>
-        <p class="site-footer__brand">STORMRIDERS</p>
+        <a class="logo" href="../index.html">Stormriders</a>
         <p class="site-footer__tagline">De ultieme Belgische wave windsurf competitie. Extreme golven, pure passie.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/stormriders.be/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/surfstormriders/" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </div>
       </div>
-      <nav class="site-footer__nav" aria-label="Footer">
-        <h3>Navigatie</h3>
-        <a href="../index.html">Home</a>
-        <a href="../events/events/index.html">Resultaten</a>
+      <nav class="site-footer__links" aria-label="Footer">
+        <h2>Ontdek</h2>
+        <a href="../events/events/index.html">Events &amp; resultaten</a>
+        <a href="../surftalk/blog-overview/index.html">Surftalk</a>
+        <a href="../media/media-foto/index.html">Foto's &amp; video's</a>
         <a href="../geschiedenis/index.html">Geschiedenis</a>
-        <a href="../rulez/index.html">Rules</a>
+        <a href="../rulez/index.html">Rulez</a>
         <a href="../over-ons/index.html">Over ons</a>
       </nav>
-      <div class="site-footer__contact">
-        <h3>Contact</h3>
+      <div class="site-footer__links">
+        <h2>Contact</h2>
         <a href="mailto:xavierroyaux@hotmail.com">xavierroyaux@hotmail.com</a>
-        <a href="tel:+32474776383">0032474776383</a>
-        <span>De Haan, Belgie</span>
+        <a href="tel:+32474776383">+32 474 77 63 83</a>
+        <span>De Haan, België</span>
       </div>
     </div>
-    <p class="site-footer__copy">© 2026 Stormriders. All rights reserved.</p>
-    <div class="socials">
-      <a href="https://www.instagram.com/stormriders.be/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-instagram"/></svg></a>
-      <a href="https://www.facebook.com/surfstormriders/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+    <p class="site-footer__wordmark" aria-hidden="true">Stormriders</p>
+    <div class="site-footer__bottom">
+      <p>© 2026 Stormriders. Alle rechten voorbehouden.</p>
+      <p>Windsurfing is not dead.</p>
     </div>
   </div>
 </footer>
+<!-- /partial:footer -->
 
-<!-- Icon sprite -->
+<!-- partial:sprite -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-arrow" viewBox="0 0 20 16"><path fill="currentColor" transform="translate(0 16) rotate(-90)" d="M15.692 10.916l-.63-.655a1.07 1.07 0 0 0-.744-.32c-.282 0-.571.114-.769.32l-4.075 4.21V1.094C9.474.491 9.05 0 8.47 0h-.892c-.58 0-1.111.491-1.111 1.094v13.425L2.4 10.261a1.004 1.004 0 0 0-.729-.32c-.282 0-.539.114-.737.32l-.627.655a1.13 1.13 0 0 0 .002 1.547l6.945 7.218c.198.205.463.319.747.319h.003c.282 0 .546-.114.744-.319l6.944-7.218a1.13 1.13 0 0 0 0-1.547z"/></symbol>
-  <symbol id="i-instagram" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"><rect x="1.667" y="1.667" width="16.666" height="16.666" rx="4.166"/><path d="M13.333 9.475a3.333 3.333 0 1 1-6.593.978 3.333 3.333 0 0 1 6.593-.978zM14.583 5.416h.009"/></g></symbol>
-  <symbol id="i-facebook" viewBox="0 0 20 20"><path fill="none" stroke="currentColor" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round" d="M15.167 1.5h-2.5A4.167 4.167 0 0 0 8.5 5.667v2.5H6v3.334h2.5v6.666h3.334v-6.666h2.5l.833-3.335h-3.333v-2.5c.001-.46.373-.832.833-.832h2.5z"/></symbol>
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></g></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></g></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></g></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 14v4M8 21h8M9 18h6"/></g></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></g></symbol>
+    <symbol id="i-direction" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 19 21l-7-4-7 4z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2.5L9 4h6l1.5 2H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></g></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></g></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M17 2.5h-3a5 5 0 0 0-5 5v3H6v4h3v7h4v-7h3l1-4h-4v-3a1 1 0 0 1 1-1h3z"/></symbol>
+  </defs>
 </svg>
+<!-- /partial:sprite -->
 
 </body>
 </html>

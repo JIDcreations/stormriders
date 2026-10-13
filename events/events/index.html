@@ -3,134 +3,212 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Events — Stormriders</title>
-  <meta name="description" content="Stormriders is een competitieve windsurf community die windsurfers verbind.">
+  <title>Events &amp; resultaten — Stormriders</title>
+  <meta name="description" content="Alle Stormriders events: BK Wave, Midsummer Wavenights en BK Crash. Data, locaties, resultaten en winnaars.">
+  <meta name="theme-color" content="#0c0d0f">
   <link rel="icon" href="../../assets/img/Ah1kjgsRExJHuZhnqSC8oUG8w.png" media="(prefers-color-scheme: light)">
   <link rel="icon" href="../../assets/img/zPwPHLjqUl2gWu2JsLtcEaPYk.png" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Events &amp; resultaten — Stormriders">
+  <meta property="og:description" content="Alle Stormriders events: BK Wave, Midsummer Wavenights en BK Crash. Data, locaties, resultaten en winnaars.">
+  <meta property="og:image" content="https://stormriders.be/assets/img/ltPzOAIMWbH3pn5Zr6PcVFyrToo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,400;0,500;0,700;1,400&display=swap">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/events.css">
   <script src="../../assets/js/main.js" defer></script>
 </head>
 <body>
 
+<!-- partial:header -->
+<a class="skip-link" href="#main">Naar de inhoud</a>
 <header class="site-header">
   <div class="container site-header__inner">
-    <a class="site-header__logo" href="../../index.html">STORMRIDERS</a>
+    <a class="logo" href="../../index.html" aria-label="Stormriders — home">Stormriders</a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu openen"><span></span><span></span></button>
     <nav class="site-nav" id="site-nav" aria-label="Hoofdmenu">
       <ul>
-        <li class="only-mobile"><a href="../../index.html">Home</a></li>
-        <li><a href="../../events/events/index.html" aria-current="page">Events</a></li>
-        <li><a href="../../media/media-foto/index.html">Media</a></li>
-        <li><a href="../../over-ons/index.html">Over ons</a></li>
-        <li><a href="../../surftalk/blog-overview/index.html">Surf talk</a></li>
-        <li><a href="../../geschiedenis/index.html">Geschiedenis</a></li>
+        <li class="only-menu"><a href="../../index.html" data-nav="home">Home</a></li>
+        <li><a href="../../events/events/index.html" data-nav="events" aria-current="page">Events</a></li>
+        <li><a href="../../surftalk/blog-overview/index.html" data-nav="surftalk">Surftalk</a></li>
+        <li><a href="../../media/media-foto/index.html" data-nav="media">Media</a></li>
+        <li><a href="../../geschiedenis/index.html" data-nav="geschiedenis">Geschiedenis</a></li>
+        <li><a href="../../rulez/index.html" data-nav="rulez">Rulez</a></li>
+        <li><a href="../../over-ons/index.html" data-nav="over-ons">Over ons</a></li>
+        <li class="nav-cta"><a class="btn btn--sm" href="../../events/bkwave-26/index.html">BK Wave 26</a></li>
       </ul>
+      <div class="menu-extra">
+        <a href="mailto:xavierroyaux@hotmail.com">xavierroyaux@hotmail.com</a>
+        <div class="socials">
+          <a href="https://www.instagram.com/stormriders.be/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/surfstormriders/" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
+<!-- /partial:header -->
 
-<main>
+<main id="main">
 
   <!-- Hero -->
-  <section class="page-hero ev-hero">
+  <section class="page-hero page-hero--short">
     <picture>
       <source media="(max-width: 809px)" srcset="../../assets/img/m3CBuiUShWFw17Ti7721nFCQGH4.png">
-      <img class="page-hero__bg" src="../../assets/img/ltPzOAIMWbH3pn5Zr6PcVFyrToo.jpg" alt="" width="2400" height="1600">
+      <img class="page-hero__bg" src="../../assets/img/ltPzOAIMWbH3pn5Zr6PcVFyrToo.jpg" alt="" fetchpriority="high">
     </picture>
-    <div class="container">
-      <h1 class="display display--hero">Events</h1>
-      <span class="rule" style="--rule-w:228px"></span>
-      <p class="lead ev-hero__lead">Ontdek alle windsurf wedstrijden, van BK Wave tot Midsummer Wave Nights. Bekijk resultaten, locaties en winnars</p>
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Kalender &amp; resultaten</p>
+      <h1 class="h1">Events</h1>
+      <p class="lead">Ontdek alle windsurf wedstrijden, van BK Wave tot Midsummer Wave Nights. Bekijk resultaten, locaties en winnars</p>
     </div>
   </section>
 
-  <!-- Events overzicht -->
-  <section class="section ev-list">
+  <!-- Nu & komend -->
+  <section class="section">
     <div class="container">
-      <h2 class="display">Events</h2>
-      <span class="rule" style="--rule-w:256px"></span>
-      <div class="card-grid ev-list__grid">
-        <a class="card reveal" href="../../events/midsummer2026/index.html">
+      <div class="sh">
+        <div class="sh__text">
+          <p class="eyebrow">Nu &amp; komend</p>
+          <h2 class="h2">Op de kalender</h2>
+        </div>
+      </div>
+      <a class="card card--feature ev-next reveal" href="../bkwave-26/index.html">
+        <img class="card__img" src="../../assets/img/6QOvEq2yixmTVOiYz69LLFn7w8.jpg" alt="" loading="lazy">
+        <span class="card__go"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        <div class="card__body">
+          <span class="tag" data-window="2026-09-01/2026-10-31" data-live-label="Waiting period">BK Wave</span>
+          <h3 class="card__title">Open BK Wave 2026</h3>
+          <p class="card__meta"><span><svg aria-hidden="true"><use href="#i-calendar"/></svg>1 september tot 31 oktober</span><span><svg aria-hidden="true"><use href="#i-pin"/></svg>Twinsclub Bredene</span></p>
+          <p class="card__excerpt">Waiting period van 2 maand — de call valt op donderdagavond.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Afgelopen -->
+  <section class="section section--dark cut grain">
+    <div class="container">
+      <div class="sh">
+        <div class="sh__text">
+          <p class="eyebrow">Archief</p>
+          <h2 class="h2">Afgelopen events</h2>
+        </div>
+      </div>
+      <div class="ev-archive">
+        <a class="card reveal" href="../midsummer2026/index.html">
           <img class="card__img" src="../../assets/img/NeZw4x2Lbk4EtYwPLFDWDt8CYhM.jpg" alt="" loading="lazy">
-          <span class="tag card__tag">Midsummerwavenights</span>
-          <div>
-            <h3 class="card__title">Midsummerwavenights 2026</h3>
-            <p class="card__meta">12 juni tot 28 juni</p>
-            <p class="card__club">De Haan</p>
-          </div>
-        </a>
-        <a class="card reveal" href="../../events/bkwave-26/index.html">
-          <img class="card__img" src="../../assets/img/1shuf73NTLK2Sp5caEncXtwEjE.jpg" alt="" loading="lazy">
-          <span class="tag card__tag">BK WAVE 2026</span>
-          <div>
-            <h3 class="card__title">BK WAVE 2026</h3>
-            <p class="card__meta">1 september - 30 oktober</p>
-            <p class="card__club">Kanaal</p>
+          <span class="card__go"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          <div class="card__body">
+            <span class="tag tag--light">Midsummer Wavenights</span>
+            <h3 class="card__title">Midsummer Wavenights 2026</h3>
+            <p class="card__meta"><span><svg aria-hidden="true"><use href="#i-calendar"/></svg>12 → 18 juni 2026</span><span><svg aria-hidden="true"><use href="#i-pin"/></svg>Surf club De Windhaan</span></p>
           </div>
         </a>
         <a class="card reveal" href="../../surftalk/bkwave-2025/index.html">
           <img class="card__img" src="../../assets/img/1shuf73NTLK2Sp5caEncXtwEjE.jpg" alt="" loading="lazy">
-          <span class="tag card__tag">BK WAVE 2025</span>
-          <div>
-            <h3 class="card__title">BK WAVE 2025</h3>
-            <p class="card__meta">1 september - 30 oktober</p>
-            <p class="card__club">Kanaal</p>
+          <span class="card__go"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          <div class="card__body">
+            <span class="tag tag--light">BK Wave</span>
+            <h3 class="card__title">BK Wave 2025</h3>
+            <p class="card__meta"><span><svg aria-hidden="true"><use href="#i-calendar"/></svg>5 oktober 2025</span><span><svg aria-hidden="true"><use href="#i-pin"/></svg>Windekind Oostduinkerke</span></p>
           </div>
         </a>
-        <a class="card ev-list__wide reveal" href="../../events/bkcrash/index.html">
+        <a class="card ev-archive__wide reveal" href="../bkcrash/index.html">
           <img class="card__img" src="../../assets/img/AXlHcMXx4EmDQ6GiR8Tc31YicBY.jpg" alt="" loading="lazy">
-          <span class="tag card__tag">BK CRASH</span>
-          <div>
+          <span class="card__go"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          <div class="card__body">
+            <span class="tag tag--light">BK Crash</span>
             <h3 class="card__title">BK Crash</h3>
-            <p class="card__meta">vroeger</p>
-            <p class="card__club">Kanaal</p>
+            <p class="card__meta"><span><svg aria-hidden="true"><use href="#i-calendar"/></svg>vroeger</span></p>
           </div>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- Winnaars -->
+  <section class="section">
+    <div class="container">
+      <div class="sh">
+        <div class="sh__text">
+          <p class="eyebrow">Resultaten</p>
+          <h2 class="h2">Hall of fame</h2>
+          <p class="sh__lead">De winnaars van de laatste edities. Klik door voor de volledige uitslag en het verslag.</p>
+        </div>
+      </div>
+      <ol class="winners">
+        <li class="reveal"><a href="../midsummer2026/index.html"><span class="winners__event">Midsummer Wavenights 2026</span><span class="winners__name">Bastien Ramery</span><span class="winners__date">Juni 2026</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li class="reveal"><a href="../../surftalk/bkwave-2026youth/index.html"><span class="winners__event">BK Wave Youth 2026 · U21</span><span class="winners__name">Alexander Erfuhrt</span><span class="winners__date">19 sep 2026</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li class="reveal"><a href="../../surftalk/bkwave-2026youth/index.html"><span class="winners__event">BK Wave Youth 2026 · U17 &amp; U15</span><span class="winners__name">Jeff François</span><span class="winners__date">19 sep 2026</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li class="reveal"><a href="../../surftalk/bkwave-2026youth/index.html"><span class="winners__event">BK Wave Youth 2026 · U17 Women</span><span class="winners__name">Lena Pas</span><span class="winners__date">19 sep 2026</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li class="reveal"><a href="../../surftalk/bkwave-2025/index.html"><span class="winners__event">BK Wave 2025</span><span class="winners__name">Thomas Beulens</span><span class="winners__date">5 okt 2025</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      </ol>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
+<!-- partial:footer -->
+<footer class="site-footer grain">
   <div class="container">
     <div class="site-footer__grid">
       <div>
-        <p class="site-footer__brand">STORMRIDERS</p>
+        <a class="logo" href="../../index.html">Stormriders</a>
         <p class="site-footer__tagline">De ultieme Belgische wave windsurf competitie. Extreme golven, pure passie.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/stormriders.be/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/surfstormriders/" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </div>
       </div>
-      <nav class="site-footer__nav" aria-label="Footer">
-        <h3>Navigatie</h3>
-        <a href="../../index.html">Home</a>
-        <a href="../../events/events/index.html">Resultaten</a>
+      <nav class="site-footer__links" aria-label="Footer">
+        <h2>Ontdek</h2>
+        <a href="../../events/events/index.html">Events &amp; resultaten</a>
+        <a href="../../surftalk/blog-overview/index.html">Surftalk</a>
+        <a href="../../media/media-foto/index.html">Foto's &amp; video's</a>
         <a href="../../geschiedenis/index.html">Geschiedenis</a>
-        <a href="../../rulez/index.html">Rules</a>
+        <a href="../../rulez/index.html">Rulez</a>
         <a href="../../over-ons/index.html">Over ons</a>
       </nav>
-      <div class="site-footer__contact">
-        <h3>Contact</h3>
+      <div class="site-footer__links">
+        <h2>Contact</h2>
         <a href="mailto:xavierroyaux@hotmail.com">xavierroyaux@hotmail.com</a>
-        <a href="tel:+32474776383">0032474776383</a>
-        <span>De Haan, Belgie</span>
+        <a href="tel:+32474776383">+32 474 77 63 83</a>
+        <span>De Haan, België</span>
       </div>
     </div>
-    <p class="site-footer__copy">© 2026 Stormriders. All rights reserved.</p>
-    <div class="socials">
-      <a href="https://www.instagram.com/stormriders.be/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-instagram"/></svg></a>
-      <a href="https://www.facebook.com/surfstormriders/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+    <p class="site-footer__wordmark" aria-hidden="true">Stormriders</p>
+    <div class="site-footer__bottom">
+      <p>© 2026 Stormriders. Alle rechten voorbehouden.</p>
+      <p>Windsurfing is not dead.</p>
     </div>
   </div>
 </footer>
+<!-- /partial:footer -->
 
-<!-- Icon sprite -->
+<!-- partial:sprite -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-arrow" viewBox="0 0 20 16"><path fill="currentColor" transform="translate(0 16) rotate(-90)" d="M15.692 10.916l-.63-.655a1.07 1.07 0 0 0-.744-.32c-.282 0-.571.114-.769.32l-4.075 4.21V1.094C9.474.491 9.05 0 8.47 0h-.892c-.58 0-1.111.491-1.111 1.094v13.425L2.4 10.261a1.004 1.004 0 0 0-.729-.32c-.282 0-.539.114-.737.32l-.627.655a1.13 1.13 0 0 0 .002 1.547l6.945 7.218c.198.205.463.319.747.319h.003c.282 0 .546-.114.744-.319l6.944-7.218a1.13 1.13 0 0 0 0-1.547z"/></symbol>
-  <symbol id="i-instagram" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"><rect x="1.667" y="1.667" width="16.666" height="16.666" rx="4.166"/><path d="M13.333 9.475a3.333 3.333 0 1 1-6.593.978 3.333 3.333 0 0 1 6.593-.978zM14.583 5.416h.009"/></g></symbol>
-  <symbol id="i-facebook" viewBox="0 0 20 20"><path fill="none" stroke="currentColor" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round" d="M15.167 1.5h-2.5A4.167 4.167 0 0 0 8.5 5.667v2.5H6v3.334h2.5v6.666h3.334v-6.666h2.5l.833-3.335h-3.333v-2.5c.001-.46.373-.832.833-.832h2.5z"/></symbol>
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></g></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></g></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></g></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 14v4M8 21h8M9 18h6"/></g></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></g></symbol>
+    <symbol id="i-direction" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 19 21l-7-4-7 4z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2.5L9 4h6l1.5 2H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></g></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></g></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M17 2.5h-3a5 5 0 0 0-5 5v3H6v4h3v7h4v-7h3l1-4h-4v-3a1 1 0 0 1 1-1h3z"/></symbol>
+  </defs>
 </svg>
+<!-- /partial:sprite -->
+
 </body>
 </html>

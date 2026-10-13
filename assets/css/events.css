@@ -1,20 +1,30 @@
-/* Events overview (events/events) */
+/* Events & resultaten hub */
 
-/* Hero */
-.ev-hero { min-height: 558px; height: 558px; padding-top: 112px; }
-.ev-hero::after { background: rgba(0, 0, 0, .2); } /* live has no overlay; light tint keeps the copy readable */
-.ev-hero .rule { margin-top: -5px; }
-.ev-hero__lead.lead { margin-top: 13px; max-width: 442px; font-size: 18px; line-height: 29px; }
-@media (max-width: 809px) {
-  .ev-hero > .container { padding-left: 40px; }
-  .ev-hero .rule { margin-top: -4px; }
-  .ev-hero__lead.lead { margin-top: 11px; }
+.ev-next { min-height: clamp(420px, 44vw, 560px); }
+.ev-next .card__excerpt { font-size: 1.0625rem; }
+
+.ev-archive { display: grid; gap: clamp(16px, 2vw, 24px); }
+@media (min-width: 720px) {
+  .ev-archive { grid-template-columns: 1fr 1fr; }
+  .ev-archive__wide { grid-column: span 2; min-height: clamp(320px, 30vw, 420px); }
 }
 
-/* List */
-.ev-list { padding: 64px 0; }
-.ev-list .rule { margin-top: -5px; }
-.ev-list__grid { margin-top: 49px; }
-.ev-list .card { min-height: 500px; }
-.ev-list__wide { grid-column: 1 / -1; }
-.ev-list .card__tag { padding: 10px 20px; text-transform: none; }
+/* Winners list — one row per event, links to the full result */
+.winners { border-top: 2px solid var(--ink); }
+.winners a {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4px 24px;
+  padding: 20px 4px; border-bottom: 1px solid var(--line);
+  transition: background-color .25s, padding .35s var(--ease);
+}
+.winners__event { grid-column: 1; font-size: .8125rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted); }
+.winners__name { grid-column: 1; font-family: var(--font-display); font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1; text-transform: uppercase; }
+.winners__date { display: none; color: var(--text-muted); font-size: var(--fs-small); }
+.winners svg { grid-column: 2; grid-row: 1 / span 2; width: 22px; height: 22px; color: var(--red); transition: transform .3s var(--ease); }
+.winners a:hover { background: var(--mist); padding-inline: 16px; }
+.winners a:hover svg { transform: translateX(4px); }
+@media (min-width: 810px) {
+  .winners a { grid-template-columns: 1.1fr 1.2fr .5fr auto; padding-block: 24px; }
+  .winners__event, .winners__name, .winners__date { grid-column: auto; }
+  .winners__date { display: block; }
+  .winners svg { grid-column: auto; grid-row: auto; }
+}

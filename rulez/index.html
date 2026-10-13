@@ -4,230 +4,259 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rulez — Stormriders</title>
-  <meta name="description" content="Stormriders is een competitieve windsurf community die windsurfers verbind.">
+  <meta name="description" content="Wedstrijdregels, wave riding guidelines en de scoring van manoeuvres en jumps op het BK Wave.">
+  <meta name="theme-color" content="#0c0d0f">
   <link rel="icon" href="../assets/img/Ah1kjgsRExJHuZhnqSC8oUG8w.png" media="(prefers-color-scheme: light)">
   <link rel="icon" href="../assets/img/zPwPHLjqUl2gWu2JsLtcEaPYk.png" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Rulez — Stormriders">
-  <meta property="og:description" content="Stormriders is een competitieve windsurf community die windsurfers verbind.">
+  <meta property="og:description" content="Wedstrijdregels, wave riding guidelines en de scoring van manoeuvres en jumps op het BK Wave.">
+  <meta property="og:image" content="https://stormriders.be/assets/img/Rlw8dPkEtRmpYqy4Ds0JOsVBNM.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,400;0,500;0,700;1,400&display=swap">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/rulez.css">
   <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
 
+<!-- partial:header -->
+<a class="skip-link" href="#main">Naar de inhoud</a>
 <header class="site-header">
   <div class="container site-header__inner">
-    <a class="site-header__logo" href="../index.html">STORMRIDERS</a>
+    <a class="logo" href="../index.html" aria-label="Stormriders — home">Stormriders</a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu openen"><span></span><span></span></button>
     <nav class="site-nav" id="site-nav" aria-label="Hoofdmenu">
       <ul>
-        <li class="only-mobile"><a href="../index.html">Home</a></li>
-        <li><a href="../events/events/index.html">Events</a></li>
-        <li><a href="../media/media-foto/index.html">Media</a></li>
-        <li><a href="../over-ons/index.html">Over ons</a></li>
-        <li><a href="../surftalk/blog-overview/index.html">Surf talk</a></li>
-        <li><a href="../geschiedenis/index.html">Geschiedenis</a></li>
+        <li class="only-menu"><a href="../index.html" data-nav="home">Home</a></li>
+        <li><a href="../events/events/index.html" data-nav="events">Events</a></li>
+        <li><a href="../surftalk/blog-overview/index.html" data-nav="surftalk">Surftalk</a></li>
+        <li><a href="../media/media-foto/index.html" data-nav="media">Media</a></li>
+        <li><a href="../geschiedenis/index.html" data-nav="geschiedenis">Geschiedenis</a></li>
+        <li><a href="../rulez/index.html" data-nav="rulez" aria-current="page">Rulez</a></li>
+        <li><a href="../over-ons/index.html" data-nav="over-ons">Over ons</a></li>
+        <li class="nav-cta"><a class="btn btn--sm" href="../events/bkwave-26/index.html">BK Wave 26</a></li>
       </ul>
+      <div class="menu-extra">
+        <a href="mailto:xavierroyaux@hotmail.com">xavierroyaux@hotmail.com</a>
+        <div class="socials">
+          <a href="https://www.instagram.com/stormriders.be/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/surfstormriders/" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
+<!-- /partial:header -->
 
-<main>
+<main id="main">
 
   <!-- Hero -->
-  <section class="page-hero sub-hero">
-    <img class="page-hero__bg" src="../assets/img/m3CBuiUShWFw17Ti7721nFCQGH4.png" alt="" width="1440" height="862">
-    <svg class="sub-hero__wedge" viewBox="0 0 1440 306" preserveAspectRatio="none" aria-hidden="true"><path d="M1440 0L868 90 0 210v96l886-62 554-144z"/></svg>
-    <div class="container">
-      <h1 class="display rz-hero__title">Rulez</h1>
-      <span class="rule sub-hero__rule" style="--rule-w:228px"></span>
-      <p class="lead sub-hero__lead">Hieronder volgt een algemene indeling van de manoeuvres met de hoogste tot de laagste score. De scores ernaast dienen slechts als richtlijn voor de juryleden en zijn geen bindende regel.</p>
+  <section class="page-hero page-hero--short">
+    <img class="page-hero__bg" src="../assets/img/m3CBuiUShWFw17Ti7721nFCQGH4.png" alt="" fetchpriority="high">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Jury &amp; scoring</p>
+      <h1 class="h1">Rulez</h1>
+      <p class="lead">Hieronder volgt een algemene indeling van de manoeuvres met de hoogste tot de laagste score. De scores ernaast dienen slechts als richtlijn voor de juryleden en zijn geen bindende regel.</p>
     </div>
   </section>
 
-  <!-- Open Belgian Championship + Info -->
-  <section class="rz-section">
-    <div class="container">
-      <h2 class="rz-h1 rz-champ">OPEN Belgian Championship <br>Wave 2025</h2>
-      <span class="rule rz-rule" style="--rule-w:256px"></span>
+  <div class="section rz">
+    <div class="container rz__layout">
 
-      <h3 class="rz-sub rz-date">4 October 2025:</h3>
-      <p class="rz-label">Inscription<br><span>8h50 Windekind surfclub, Zuidenwindhelling 1 Oostduinkerke</span></p>
-      <p class="rz-label">Briefing<br><span>9h30 First heat: 10h</span></p>
-
-      <h3 class="rz-sub rz-cats-title">Categories:</h3>
-      <ul class="rz-cats">
-        <li>Men Open</li>
-        <li>Women</li>
-        <li>U21</li>
-        <li>U19</li>
-        <li>U17</li>
-        <li>U15</li>
-        <li>U13</li>
-      </ul>
-
-      <h2 class="rz-h1 rz-info-title">Info</h2>
-      <span class="rule rz-rule" style="--rule-w:202px"></span>
-      <div class="rz-info">
-        <p>1. The event will be run with elimination ladders, wich will be presented at 9h50 at the race office</p>
-        <p>2. The race office is in the blue federation trailer of the WWSV</p>
-        <p>3. Heat time and transition time will be made public during the briefing</p>
-        <p>4. Number of waverides and jumps to be scored per heat will be announced during the briefing and can be changed during the event, so get informed at the trailer before your heate</p>
-        <p>5.&nbsp; It is an open Championship, so open for foreigners to participate in the same elimination ladder as the Belgians.&nbsp; There will be two results.&nbsp; One for fort he Open, one for Belgian participants</p>
-        <p>6.&nbsp; When a heat is canceled it will be rerun, either directly or later</p>
-        <p>7. There are no flags, the lights serve as information.&nbsp; In the race office the explication of the meaning of the lights will be hung out</p>
-        <p>8. Participants should wear a coloured lycra during the heat, if the lycra is lost or not and the rider can not obtain it, he will still be judged during his heat.</p>
-        <p>9. If a rider is injured and in need of help and needs to get rescued by a fellow competitor in that heat and the helping competitor ask the rerun the heat , the heat will be rerun</p>
-        <p>10. The rider that picks up the swell first has the right of way on that wave.&nbsp; If two riders pick up a swell at the same time, the rider upwind on that wave has the right of way</p>
-        <p>11. Riders going out through the breaking surf have rigth of way compared to riders coming in. Once behind the breaking surf, port has priority over starboard</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Wave riding guidelines -->
-  <section class="rz-section section--dark">
-    <div class="container">
-      <h2 class="rz-h1">wave riding guidelines</h2>
-      <span class="rule rz-rule" style="--rule-w:640px"></span>
-      <div class="rz-prose">
-        <div>
-          <p>Competitors will be judged primarily on the fundamental principals of good wave riding - speed, fluidity, power and their proximity to the critical section of the wave. In general a more vertical approach to the lip, initiated by a committed, powerful bottom turn will score more highly than a more horizontal “down the line” style of ride. Directional changes will be assessed on the degree to which direction is changed and on the speed and fluidity with which this change is achieved. The amount of spray thrown out during the turn, will tend to indicate the severity of the directional change.</p>
-          <p>Cutbacks will be scored considering the vertical aspect of the approach, the proximity to the critical section of the wave, how deep inside the lip the turn is made and the speed and power with which the manoeuvre is executed. The sailor who is committed deep into the face of the wave will score more highly.</p>
-        </div>
-        <div>
-          <p>Aerial manoeuvres will enhance the score but there should be clear differentiation between simple hops after riding straight down the line and aerials that are performed by bottom turning back up the face and hitting the lip. Aerials should be executed in a controlled fashion and a manoeuvre that is cleanly “tweaked” shall score more highly than one that is ragged or twitchy in the air. The sailor that uses the wave and “hits” the lip to create the aerial will score more highly than one who simply hops off the top of the wave.</p>
-          <p>Freestyle manoeuvres will only enhance the wave score if intergrated into the wave ride and are performed in a critical part of the wave. Sailors who simply set up for one freestyle move on the wave will not be scored higher compared with a sailor who has ridden the wave. It should always be considered that this is the waveriding category, however pushing the sport with radical manoeuvres will be rewarded.</p>
-        </div>
-        <div>
-          <p>To gain maximum points sailors should demonstrate as wide a variety of different skills as possible. A sailor who performs both cutbacks and aerials should in general score more highly than a sailor who performs the same move repeatedly as should a sailor who includes front and backside riding and any number of other manoeuvres during the ride. Sailors who simply blast down the line and perform one big move will not be scored as highly as those who really ride the wave, but only if the turns and manoeuvres performed are of a high standard. In general quantity should not be scored more highly than quality.</p>
-        </div>
-        <div>
-          <p>Whilst wave selection is a factor in scoring, it should only influence scoring between 2 equally well ridden waves. In general, a sailor who rides a smaller wave well, shall score more highly than a sailor that takes a bigger wave but does not ride it as well as the smaller one.</p>
-          <p>Sailors who take risks and perform more radical manoeuvres should be rewarded more than sailors who “play safe” provided that manoeuvres are completed in a reasonably controlled fashion.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Manoeuvres -->
-  <section class="rz-section">
-    <div class="container">
-      <h2 class="rz-h2">MANOEUVRES</h2>
-      <span class="rule rz-rule" style="--rule-w:297px"></span>
-      <div class="rz-media rz-media--manoeuvres">
-        <div class="rz-small">
-          <p>One-handed manoeuvres enhance difficulty and score, but the difficulty of the basic manouvre should be taken into account. A sailor who performs a much more difficult manoeuvre should be more highly rewarded than a sailor who simply removes one hand during an average manoeuvre.</p>
-          <p>To encourage progress in wave manoeuvres, new moves will be scored highly, but only if executed in a controlled fashion.</p>
-          <p>If it is difficult to clearly determine individual waves, then the entire sail in may be scored as one wave. Sailors will be informed of this at the skippers meeting or at the check in.</p>
-          <p>If a sailor is on a wave at the end of a the heat, that wave will continue to be scored until the sailor exits the wave.</p>
-        </div>
-        <img class="rz-img" src="../assets/img/Rlw8dPkEtRmpYqy4Ds0JOsVBNM.jpg" alt="Windsurfer maakt een sprong boven de golven" width="878" height="490" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <!-- Generalisation of highest scoring wave manoeuvres -->
-  <section class="rz-section">
-    <div class="container">
-      <h2 class="rz-h2">Generalisation of highest scoring wave manoeuvres</h2>
-      <span class="rule rz-rule" style="--rule-w:1083px"></span>
-      <p class="rz-note">(Points are relative)</p>
-      <div class="rz-media rz-media--general">
-        <img class="rz-img" src="../assets/img/Rlw8dPkEtRmpYqy4Ds0JOsVBNM.jpg" alt="Windsurfer in de lucht tijdens een off the lip manoeuvre" width="901" height="447" loading="lazy">
-        <ol class="rz-list rz-list--spaced">
-          <li>Off the lip back loops. 10pt.</li>
-          <li>Off the lip air 360 deg. (air Takas, Goiters, frontside wave 360) 9pt</li>
-          <li>Off the lip forward loop. 8pt</li>
-          <li>Table top aerials. 7pt</li>
-          <li>Off the lip aerials. 6pt</li>
-          <li>Upwind 360 non air (waveshaka),non air taka 5pt</li>
-          <li>Vertical snappie rides. 4pt</li>
-          <li>Forward loop in the chop. 3pt</li>
-          <li>horizontal waveride 3pt</li>
+      <nav class="rz-toc" aria-label="Op deze pagina">
+        <p class="rz-toc__title">Op deze pagina</p>
+        <ol>
+          <li><a href="#bk-2025">Open BK Wave 2025</a></li>
+          <li><a href="#info">Info</a></li>
+          <li><a href="#guidelines">Wave riding guidelines</a></li>
+          <li><a href="#manoeuvres">Manoeuvres</a></li>
+          <li><a href="#wave-scoring">Wave scoring</a></li>
+          <li><a href="#jumping">Jumping</a></li>
+          <li><a href="#notes">Wave riding notes</a></li>
         </ol>
-      </div>
-    </div>
-  </section>
+      </nav>
 
-  <!-- Jumping -->
-  <section class="rz-section">
-    <div class="container">
-      <h2 class="rz-h2">Jumping</h2>
-      <span class="rule rz-rule" style="--rule-w:174px"></span>
-      <h3 class="rz-sub rz-jump-title">JUMP SCORING</h3>
-      <p class="rz-jump-text">At events where more than one jump is scored, jumps must be different unless otherwise specified in the sailing instructions. The generalisation of highest scored manoeuvres to lowest scored manoeuvres is below. These are guidelines for perfectly executed manoeuvres of equal height and should only be taken as as general guide. Jumps of particular height or style, as well as jumps performed in different conditions may score more highly than jumps listed higher in the list below. Judges will evaluate the jumps on a day to day basis, based on the conditions, wave height and wind strength.</p>
-      <div class="rz-media rz-media--jumping">
-        <ol class="rz-list rz-list--jumps">
-          <li>Double Back Loop (DB), Push Loop Forward (PF) 10pt</li>
-          <li>Double Forward (DF) 9pt</li>
-          <li>Push Loop Table Top (PTT) 8pt</li>
-          <li>Table Top Forward (TTF), Air Chacho (AC), Clew First Forward (CFF), SHIFTY (SY) 7pt,</li>
-          <li>Shakka (SK), Back Loop (B) 6pt</li>
-          <li>Push Loop (P), Table Top (TT), Crazy Pete (CP) 5pt</li>
-          <li>Forward (F) Shoveit 4pt</li>
-          <li>Cheese Roll (CR) 3pt</li>
-          <li>High Jumps 2pt</li>
-          <li>Long Jumps 1pt</li>
-        </ol>
-        <img class="rz-img" src="../assets/img/Rlw8dPkEtRmpYqy4Ds0JOsVBNM.jpg" alt="Windsurfer tijdens een hoge sprong boven het schuim" width="880" height="451" loading="lazy">
-      </div>
-    </div>
-  </section>
+      <div class="rz__content">
 
-  <!-- Wave riding notes -->
-  <section class="rz-section section--dark">
-    <div class="container">
-      <h2 class="rz-h2">Wave riding notes</h2>
-      <span class="rule rz-rule" style="--rule-w:412px"></span>
-      <div class="rz-notes">
-        <p>One handed or one footed manoeuvres shall be scored more highly if completed with equal height and in control, but shall not be scored as a different jump.</p>
-        <p>Tweaked variations such as Table Top Forward Loops and Push Loop Table Tops shall only be scored as different jumps if the Table Top aspect is clear and distinguishable from the normal manoeuvre.</p>
-        <p>The judges shall mark each jump with an abbreviation specifying which particular jump the competitor has performed.</p>
+        <section class="rz-block" id="bk-2025" aria-labelledby="t-bk">
+          <h2 class="h2" id="t-bk">OPEN Belgian Championship <br>Wave 2025</h2>
+          <div class="rz-event">
+            <p class="rz-event__date"><svg aria-hidden="true"><use href="#i-calendar"/></svg>4 October 2025:</p>
+            <dl class="rz-event__facts">
+              <div><dt>Inscription</dt><dd>8h50 Windekind surfclub, Zuidenwindhelling 1 Oostduinkerke</dd></div>
+              <div><dt>Briefing</dt><dd>9h30 First heat: 10h</dd></div>
+            </dl>
+            <div class="rz-event__cats">
+              <h3 class="rz-label">Categories:</h3>
+              <ul class="rz-chips">
+                <li>Men Open</li>
+                <li>Women</li>
+                <li>U21</li>
+                <li>U19</li>
+                <li>U17</li>
+                <li>U15</li>
+                <li>U13</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="rz-block" id="info" aria-labelledby="t-info">
+          <h2 class="h2" id="t-info">Info</h2>
+          <ol class="rz-steps">
+          <li><span class="rz-num" aria-hidden="true">1</span><p>The event will be run with elimination ladders, wich will be presented at 9h50 at the race office</p></li>
+          <li><span class="rz-num" aria-hidden="true">2</span><p>The race office is in the blue federation trailer of the WWSV</p></li>
+          <li><span class="rz-num" aria-hidden="true">3</span><p>Heat time and transition time will be made public during the briefing</p></li>
+          <li><span class="rz-num" aria-hidden="true">4</span><p>Number of waverides and jumps to be scored per heat will be announced during the briefing and can be changed during the event, so get informed at the trailer before your heate</p></li>
+          <li><span class="rz-num" aria-hidden="true">5</span><p>It is an open Championship, so open for foreigners to participate in the same elimination ladder as the Belgians.&nbsp; There will be two results.&nbsp; One for fort he Open, one for Belgian participants</p></li>
+          <li><span class="rz-num" aria-hidden="true">6</span><p>When a heat is canceled it will be rerun, either directly or later</p></li>
+          <li><span class="rz-num" aria-hidden="true">7</span><p>There are no flags, the lights serve as information.&nbsp; In the race office the explication of the meaning of the lights will be hung out</p></li>
+          <li><span class="rz-num" aria-hidden="true">8</span><p>Participants should wear a coloured lycra during the heat, if the lycra is lost or not and the rider can not obtain it, he will still be judged during his heat.</p></li>
+          <li><span class="rz-num" aria-hidden="true">9</span><p>If a rider is injured and in need of help and needs to get rescued by a fellow competitor in that heat and the helping competitor ask the rerun the heat , the heat will be rerun</p></li>
+          <li><span class="rz-num" aria-hidden="true">10</span><p>The rider that picks up the swell first has the right of way on that wave.&nbsp; If two riders pick up a swell at the same time, the rider upwind on that wave has the right of way</p></li>
+          <li><span class="rz-num" aria-hidden="true">11</span><p>Riders going out through the breaking surf have rigth of way compared to riders coming in. Once behind the breaking surf, port has priority over starboard</p></li>
+          </ol>
+        </section>
+
+        <section class="rz-block rz-block--dark grain" id="guidelines" aria-labelledby="t-guide">
+          <h2 class="h2" id="t-guide">wave riding guidelines</h2>
+          <div class="prose rz-cols">
+            <p>Competitors will be judged primarily on the fundamental principals of good wave riding - speed, fluidity, power and their proximity to the critical section of the wave. In general a more vertical approach to the lip, initiated by a committed, powerful bottom turn will score more highly than a more horizontal “down the line” style of ride. Directional changes will be assessed on the degree to which direction is changed and on the speed and fluidity with which this change is achieved. The amount of spray thrown out during the turn, will tend to indicate the severity of the directional change.</p>
+            <p>Cutbacks will be scored considering the vertical aspect of the approach, the proximity to the critical section of the wave, how deep inside the lip the turn is made and the speed and power with which the manoeuvre is executed. The sailor who is committed deep into the face of the wave will score more highly.</p>
+            <p>Aerial manoeuvres will enhance the score but there should be clear differentiation between simple hops after riding straight down the line and aerials that are performed by bottom turning back up the face and hitting the lip. Aerials should be executed in a controlled fashion and a manoeuvre that is cleanly “tweaked” shall score more highly than one that is ragged or twitchy in the air. The sailor that uses the wave and “hits” the lip to create the aerial will score more highly than one who simply hops off the top of the wave.</p>
+            <p>Freestyle manoeuvres will only enhance the wave score if intergrated into the wave ride and are performed in a critical part of the wave. Sailors who simply set up for one freestyle move on the wave will not be scored higher compared with a sailor who has ridden the wave. It should always be considered that this is the waveriding category, however pushing the sport with radical manoeuvres will be rewarded.</p>
+            <p>To gain maximum points sailors should demonstrate as wide a variety of different skills as possible. A sailor who performs both cutbacks and aerials should in general score more highly than a sailor who performs the same move repeatedly as should a sailor who includes front and backside riding and any number of other manoeuvres during the ride. Sailors who simply blast down the line and perform one big move will not be scored as highly as those who really ride the wave, but only if the turns and manoeuvres performed are of a high standard. In general quantity should not be scored more highly than quality.</p>
+            <p>Whilst wave selection is a factor in scoring, it should only influence scoring between 2 equally well ridden waves. In general, a sailor who rides a smaller wave well, shall score more highly than a sailor that takes a bigger wave but does not ride it as well as the smaller one.</p>
+            <p>Sailors who take risks and perform more radical manoeuvres should be rewarded more than sailors who “play safe” provided that manoeuvres are completed in a reasonably controlled fashion.</p>
+          </div>
+        </section>
+
+        <section class="rz-block" id="manoeuvres" aria-labelledby="t-man">
+          <h2 class="h2" id="t-man">MANOEUVRES</h2>
+          <div class="rz-split">
+            <div class="prose">
+              <p>One-handed manoeuvres enhance difficulty and score, but the difficulty of the basic manouvre should be taken into account. A sailor who performs a much more difficult manoeuvre should be more highly rewarded than a sailor who simply removes one hand during an average manoeuvre.</p>
+              <p>To encourage progress in wave manoeuvres, new moves will be scored highly, but only if executed in a controlled fashion.</p>
+              <p>If it is difficult to clearly determine individual waves, then the entire sail in may be scored as one wave. Sailors will be informed of this at the skippers meeting or at the check in.</p>
+              <p>If a sailor is on a wave at the end of a the heat, that wave will continue to be scored until the sailor exits the wave.</p>
+            </div>
+            <img class="rz-img" src="../assets/img/Rlw8dPkEtRmpYqy4Ds0JOsVBNM.jpg" alt="Windsurfer maakt een sprong boven de golven" width="878" height="490" loading="lazy">
+          </div>
+        </section>
+
+        <section class="rz-block" id="wave-scoring" aria-labelledby="t-gen">
+          <h2 class="h3 rz-h3" id="t-gen">Generalisation of highest scoring wave manoeuvres</h2>
+          <p class="rz-note">(Points are relative)</p>
+          <ol class="rz-score">
+            <li><span>Off the lip back loops</span><b>10<small>pt</small></b></li>
+            <li><span>Off the lip air 360 deg. (air Takas, Goiters, frontside wave 360)</span><b>9<small>pt</small></b></li>
+            <li><span>Off the lip forward loop</span><b>8<small>pt</small></b></li>
+            <li><span>Table top aerials</span><b>7<small>pt</small></b></li>
+            <li><span>Off the lip aerials</span><b>6<small>pt</small></b></li>
+            <li><span>Upwind 360 non air (waveshaka),non air taka</span><b>5<small>pt</small></b></li>
+            <li><span>Vertical snappie rides</span><b>4<small>pt</small></b></li>
+            <li><span>Forward loop in the chop</span><b>3<small>pt</small></b></li>
+            <li><span>horizontal waveride</span><b>3<small>pt</small></b></li>
+          </ol>
+        </section>
+
+        <section class="rz-block" id="jumping" aria-labelledby="t-jump">
+          <h2 class="h2" id="t-jump">Jumping</h2>
+          <h3 class="rz-label">JUMP SCORING</h3>
+          <p class="rz-text">At events where more than one jump is scored, jumps must be different unless otherwise specified in the sailing instructions. The generalisation of highest scored manoeuvres to lowest scored manoeuvres is below. These are guidelines for perfectly executed manoeuvres of equal height and should only be taken as as general guide. Jumps of particular height or style, as well as jumps performed in different conditions may score more highly than jumps listed higher in the list below. Judges will evaluate the jumps on a day to day basis, based on the conditions, wave height and wind strength.</p>
+          <div class="rz-split rz-split--score">
+            <ol class="rz-score">
+            <li><span>Double Back Loop (DB), Push Loop Forward (PF)</span><b>10<small>pt</small></b></li>
+            <li><span>Double Forward (DF)</span><b>9<small>pt</small></b></li>
+            <li><span>Push Loop Table Top (PTT)</span><b>8<small>pt</small></b></li>
+            <li><span>Table Top Forward (TTF), Air Chacho (AC), Clew First Forward (CFF), SHIFTY (SY)</span><b>7<small>pt</small></b></li>
+            <li><span>Shakka (SK), Back Loop (B)</span><b>6<small>pt</small></b></li>
+            <li><span>Push Loop (P), Table Top (TT), Crazy Pete (CP)</span><b>5<small>pt</small></b></li>
+            <li><span>Forward (F) Shoveit</span><b>4<small>pt</small></b></li>
+            <li><span>Cheese Roll (CR)</span><b>3<small>pt</small></b></li>
+            <li><span>High Jumps</span><b>2<small>pt</small></b></li>
+            <li><span>Long Jumps</span><b>1<small>pt</small></b></li>
+            </ol>
+            <img class="rz-img" src="../assets/img/Rlw8dPkEtRmpYqy4Ds0JOsVBNM.jpg" alt="Windsurfer tijdens een hoge sprong boven het schuim" width="880" height="451" loading="lazy">
+          </div>
+        </section>
+
+        <section class="rz-block" id="notes" aria-labelledby="t-notes">
+          <h2 class="h2" id="t-notes">Wave riding notes</h2>
+          <div class="rz-callout prose">
+            <p>One handed or one footed manoeuvres shall be scored more highly if completed with equal height and in control, but shall not be scored as a different jump.</p>
+            <p>Tweaked variations such as Table Top Forward Loops and Push Loop Table Tops shall only be scored as different jumps if the Table Top aspect is clear and distinguishable from the normal manoeuvre.</p>
+            <p>The judges shall mark each jump with an abbreviation specifying which particular jump the competitor has performed.</p>
+          </div>
+        </section>
+
       </div>
     </div>
-  </section>
+  </div>
 
 </main>
 
-<footer class="site-footer site-footer--light">
+<!-- partial:footer -->
+<footer class="site-footer grain">
   <div class="container">
     <div class="site-footer__grid">
       <div>
-        <p class="site-footer__brand">STORMRIDERS</p>
+        <a class="logo" href="../index.html">Stormriders</a>
         <p class="site-footer__tagline">De ultieme Belgische wave windsurf competitie. Extreme golven, pure passie.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/stormriders.be/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/surfstormriders/" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </div>
       </div>
-      <nav class="site-footer__nav" aria-label="Footer">
-        <h3>Navigatie</h3>
-        <a href="../index.html">Home</a>
-        <a href="../events/events/index.html">Resultaten</a>
+      <nav class="site-footer__links" aria-label="Footer">
+        <h2>Ontdek</h2>
+        <a href="../events/events/index.html">Events &amp; resultaten</a>
+        <a href="../surftalk/blog-overview/index.html">Surftalk</a>
+        <a href="../media/media-foto/index.html">Foto's &amp; video's</a>
         <a href="../geschiedenis/index.html">Geschiedenis</a>
-        <a href="../rulez/index.html">Rules</a>
+        <a href="../rulez/index.html">Rulez</a>
         <a href="../over-ons/index.html">Over ons</a>
       </nav>
-      <div class="site-footer__contact">
-        <h3>Contact</h3>
+      <div class="site-footer__links">
+        <h2>Contact</h2>
         <a href="mailto:xavierroyaux@hotmail.com">xavierroyaux@hotmail.com</a>
-        <a href="tel:+32474776383">0032474776383</a>
-        <span>De Haan, Belgie</span>
+        <a href="tel:+32474776383">+32 474 77 63 83</a>
+        <span>De Haan, België</span>
       </div>
     </div>
-    <p class="site-footer__copy">© 2026 Stormriders. All rights reserved.</p>
-    <div class="socials">
-      <a href="https://www.instagram.com/stormriders.be/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-instagram"/></svg></a>
-      <a href="https://www.facebook.com/surfstormriders/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+    <p class="site-footer__wordmark" aria-hidden="true">Stormriders</p>
+    <div class="site-footer__bottom">
+      <p>© 2026 Stormriders. Alle rechten voorbehouden.</p>
+      <p>Windsurfing is not dead.</p>
     </div>
   </div>
 </footer>
+<!-- /partial:footer -->
 
-<!-- Icon sprite -->
+<!-- partial:sprite -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-arrow" viewBox="0 0 20 16"><path fill="currentColor" transform="translate(0 16) rotate(-90)" d="M15.692 10.916l-.63-.655a1.07 1.07 0 0 0-.744-.32c-.282 0-.571.114-.769.32l-4.075 4.21V1.094C9.474.491 9.05 0 8.47 0h-.892c-.58 0-1.111.491-1.111 1.094v13.425L2.4 10.261a1.004 1.004 0 0 0-.729-.32c-.282 0-.539.114-.737.32l-.627.655a1.13 1.13 0 0 0 .002 1.547l6.945 7.218c.198.205.463.319.747.319h.003c.282 0 .546-.114.744-.319l6.944-7.218a1.13 1.13 0 0 0 0-1.547z"/></symbol>
-  <symbol id="i-instagram" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round"><rect x="1.667" y="1.667" width="16.666" height="16.666" rx="4.166"/><path d="M13.333 9.475a3.333 3.333 0 1 1-6.593.978 3.333 3.333 0 0 1 6.593-.978zM14.583 5.416h.009"/></g></symbol>
-  <symbol id="i-facebook" viewBox="0 0 20 20"><path fill="none" stroke="currentColor" stroke-width="1.667" stroke-linecap="round" stroke-linejoin="round" d="M15.167 1.5h-2.5A4.167 4.167 0 0 0 8.5 5.667v2.5H6v3.334h2.5v6.666h3.334v-6.666h2.5l.833-3.335h-3.333v-2.5c.001-.46.373-.832.833-.832h2.5z"/></symbol>
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></g></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></g></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></g></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 14v4M8 21h8M9 18h6"/></g></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></g></symbol>
+    <symbol id="i-direction" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 19 21l-7-4-7 4z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2.5L9 4h6l1.5 2H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></g></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></g></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M17 2.5h-3a5 5 0 0 0-5 5v3H6v4h3v7h4v-7h3l1-4h-4v-3a1 1 0 0 1 1-1h3z"/></symbol>
+  </defs>
 </svg>
+<!-- /partial:sprite -->
 
 </body>
 </html>

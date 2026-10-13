@@ -6,3 +6,23 @@
 .page-hero .lead { font-size: clamp(1.0625rem, 1rem + .3vw, 1.25rem); max-width: 62ch; }
 .page-hero .tag[data-state="live"]::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #fff; animation: blink 1.4s infinite; }
 @keyframes blink { 50% { opacity: .25; } }
+
+/* Long report: story text with a sticky photo alongside */
+.ev-story { display: grid; gap: clamp(40px, 6vw, 96px); align-items: start; }
+@media (min-width: 900px) {
+  .ev-story { grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); }
+  .ev-story__media { position: sticky; top: calc(var(--header-h) + 32px); }
+}
+.ev-story__media img { aspect-ratio: 4 / 5; }
+
+/* Partner logo row (event pages) */
+.ev-partners { padding: clamp(40px, 5vw, 64px) 0; border-bottom: 1px solid var(--line); }
+.ev-partners__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; margin-bottom: 28px; }
+.ev-partners__thanks { font-size: var(--fs-small); color: var(--text-muted); }
+
+
+/* Results sheet image */
+.ev-results a { display: block; overflow: hidden; border-radius: var(--r-md); background: var(--paper); box-shadow: 0 24px 48px -24px rgba(12, 13, 15, .35); }
+.ev-results img { width: 100%; transition: transform .8s var(--ease); }
+.ev-results a:hover img { transform: scale(1.02); }
+

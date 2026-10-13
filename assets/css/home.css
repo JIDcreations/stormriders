@@ -106,16 +106,6 @@
   .bigmoves__grid a, .bigmoves__grid a:first-child { aspect-ratio: auto; grid-column: auto; }
   .bigmoves__grid a:first-child { grid-row: span 2; }
 }
-.bigmoves__send {
-  display: flex; align-items: center; gap: 16px; margin-top: 16px; padding: 20px 24px;
-  border: 1.5px dashed var(--line); border-radius: var(--r-md);
-  transition: border-color .3s, background-color .3s;
-}
-.bigmoves__send svg { width: 24px; height: 24px; flex: none; color: var(--red); }
-.bigmoves__send strong { font-weight: 700; }
-.bigmoves__send-arrow { margin-left: auto; transition: transform .3s var(--ease); }
-.bigmoves__send:hover { border-color: var(--red); background: rgba(225, 6, 0, .04); }
-.bigmoves__send:hover .bigmoves__send-arrow { transform: translateX(4px); }
 
 /* ---------- Geschiedenis timeline ---------- */
 .timeline { position: relative; display: grid; gap: 40px; }
